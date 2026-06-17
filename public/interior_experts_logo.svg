@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f7d54a"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#8f8f8f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer rings -->
+  <path d="M390,120 A380,380 0 0 0 390,880" fill="none" stroke="url(#silver)" stroke-width="85"/>
+  <path d="M610,120 A380,380 0 0 1 610,880" fill="none" stroke="url(#gold)" stroke-width="85"/>
+
+  <!-- Left stylized I -->
+  <path d="M420 260
+           Q300 280 250 380
+           L300 430
+           Q330 350 420 330
+           L420 670
+           Q330 650 300 570
+           L250 620
+           Q300 720 420 740
+           Z"
+        fill="url(#gold)"/>
+
+  <!-- Right stylized E -->
+  <path d="M520 200 L520 800
+           L580 800
+           A250 250 0 0 0 760 620
+           L610 620
+           L610 530
+           L800 530
+           L800 470
+           L610 470
+           L610 380
+           A250 250 0 0 1 760 200
+           Z"
+        fill="url(#silver)"/>
+</svg>

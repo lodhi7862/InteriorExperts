@@ -57,13 +57,13 @@ const projects: Project[] = [
     name: "UAE Embassy Residences",
     location: "Islamabad",
     category: "Diplomatic Residences",
-    image: "/images/exterior_1.png",
+    image: "/images/UAEembassy.jpeg",
   },
   {
     name: "Australian High Commission",
     location: "Islamabad",
     category: "Diplomatic Sector",
-    image: "/images/office_1.png",
+    image: "/images/AustralianComm.jpg",
   },
   {
     name: "Australian Embassy Chancery",
@@ -75,7 +75,7 @@ const projects: Project[] = [
     name: "Crown Plaza Hotel",
     location: "Islamabad",
     category: "Hospitality",
-    image: "/images/interior_1.png",
+    image: "/images/crownplazahotel.jpg",
   },
   {
     name: "French School",

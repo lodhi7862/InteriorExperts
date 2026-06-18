@@ -38,7 +38,7 @@ export default function Gallery() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const pausedRef = useRef(false);
   const lastFrameRef = useRef(0);
-  const visibleCardStep = 3;
+  const visibleCardStep = 1;
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -47,7 +47,7 @@ export default function Gallery() {
     }
 
     let animationFrame = 0;
-    const speed = 0.045;
+    const speed = 0.15;
 
     const step = (timestamp: number) => {
       if (!lastFrameRef.current) {
@@ -58,7 +58,7 @@ export default function Gallery() {
       lastFrameRef.current = timestamp;
 
       if (!pausedRef.current) {
-        carousel.scrollLeft += delta * speed;
+        carousel.scrollLeft += Math.max(delta * speed, 0.5);
 
         const loopWidth = carousel.scrollWidth / 2;
         if (carousel.scrollLeft >= loopWidth) {
@@ -83,7 +83,8 @@ export default function Gallery() {
     }
 
     const firstCard = carousel.querySelector<HTMLElement>("[data-gallery-card]");
-    return ((firstCard?.offsetWidth ?? 0) + 24) * visibleCardStep;
+    const gap = 24;
+    return ((firstCard?.offsetWidth ?? 0) + gap) * visibleCardStep;
   };
 
   const handlePrev = () => {

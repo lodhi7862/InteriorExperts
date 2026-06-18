@@ -72,7 +72,7 @@ export default function Navbar() {
             />
             <div>
               <span className="font-serif text-xl md:text-2xl font-bold tracking-[0.2em] text-white transition-colors duration-300 group-hover:text-gold">
-                INTERIOR<span className="text-gold group-hover:text-white">EXPERTS</span>
+                INTERIOR <span className="text-gold group-hover:text-white">EXPERTS  </span>
               </span>
               <span className="text-[9px] md:text-[10px] tracking-[0.5em] text-gold uppercase mt-0.5 block">
                 Building Excellence

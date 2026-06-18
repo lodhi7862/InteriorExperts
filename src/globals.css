@@ -93,9 +93,14 @@ html.lenis, html.lenis body {
 }
 
 /* Additional Utilities */
-.text-stroke-gold {
+/* .text-stroke-gold {
   -webkit-text-stroke: 1px rgba(212, 175, 55, 0.3);
   color: transparent;
+} */
+
+.text-stroke-gold {
+  -webkit-text-stroke: 2px #D4AF37;
+  color: rgba(212, 175, 55, 0.25); /* subtle gold fill */
 }
 
 .text-stroke-gold-solid {

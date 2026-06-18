@@ -4,56 +4,32 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import galleryImage1 from "../../../Gallery/1.jpeg";
-import galleryImage2 from "../../../Gallery/2.jpeg";
-import galleryImage3 from "../../../Gallery/3.jpeg";
-import galleryImage4 from "../../../Gallery/4.jpeg";
-import galleryImage5 from "../../../Gallery/5.jpeg";
-import galleryImage6 from "../../../Gallery/6.jpeg";
-import galleryImage7 from "../../../Gallery/7.jpeg";
-import galleryImage8 from "../../../Gallery/8.jpeg";
-import galleryImage9 from "../../../Gallery/9.jpeg";
-import galleryImage10 from "../../../Gallery/10.jpeg";
-import galleryImage11 from "../../../Gallery/11.jpeg";
-import galleryImage12 from "../../../Gallery/12.jpeg";
-import galleryImage13 from "../../../Gallery/13.jpeg";
-import galleryImage14 from "../../../Gallery/14.jpeg";
-import galleryImage15 from "../../../Gallery/15.jpeg";
-import galleryImage16 from "../../../Gallery/16.jpeg";
-import galleryImage17 from "../../../Gallery/17.jpeg";
-import galleryImage18 from "../../../Gallery/18.jpeg";
-import galleryImage19 from "../../../Gallery/19.jpeg";
-import galleryImage20 from "../../../Gallery/20.jpeg";
-import galleryImage21 from "../../../Gallery/21.jpeg";
-import galleryImage22 from "../../../Gallery/22.jpeg";
-import galleryImage23 from "../../../Gallery/23.jpeg";
-import galleryImage24 from "../../../Gallery/24.jpeg";
-
+// ✅ Gallery items with string paths (no imports needed)
 const galleryItems = [
-  { id: 1, title: "Gallery 01", image: galleryImage1 },
-  { id: 2, title: "Gallery 02", image: galleryImage2 },
-  { id: 3, title: "Gallery 03", image: galleryImage3 },
-  { id: 4, title: "Gallery 04", image: galleryImage4 },
-  { id: 5, title: "Gallery 05", image: galleryImage5 },
-  { id: 6, title: "Gallery 06", image: galleryImage6 },
-  { id: 7, title: "Gallery 07", image: galleryImage7 },
-  { id: 8, title: "Gallery 08", image: galleryImage8 },
-  { id: 9, title: "Gallery 09", image: galleryImage9 },
-  { id: 10, title: "Gallery 10", image: galleryImage10 },
-  { id: 11, title: "Gallery 11", image: galleryImage11 },
-  { id: 12, title: "Gallery 12", image: galleryImage12 },
-  { id: 13, title: "Gallery 13", image: galleryImage13 },
-  { id: 14, title: "Gallery 14", image: galleryImage14 },
-  { id: 15, title: "Gallery 15", image: galleryImage15 },
-  { id: 16, title: "Gallery 16", image: galleryImage16 },
-  { id: 17, title: "Gallery 17", image: galleryImage17 },
-  { id: 18, title: "Gallery 18", image: galleryImage18 },
-  { id: 19, title: "Gallery 19", image: galleryImage19 },
-  { id: 20, title: "Gallery 20", image: galleryImage20 },
-  { id: 21, title: "Gallery 21", image: galleryImage21 },
-  { id: 22, title: "Gallery 22", image: galleryImage22 },
-  { id: 23, title: "Gallery 23", image: galleryImage23 },
-  { id: 24, title: "Gallery 24", image: galleryImage24 },
+  { id: 1, title: "Gallery 01", image: "/Gallery/1.jpeg" },
+  { id: 2, title: "Gallery 02", image: "/Gallery/2.jpeg" },
+  { id: 3, title: "Gallery 03", image: "/Gallery/3.jpeg" },
+  { id: 4, title: "Gallery 04", image: "/Gallery/4.jpeg" },
+  { id: 5, title: "Gallery 05", image: "/Gallery/5.jpeg" },
+  { id: 6, title: "Gallery 06", image: "/Gallery/6.jpeg" },
+  { id: 7, title: "Gallery 07", image: "/Gallery/7.jpeg" },
+  { id: 8, title: "Gallery 08", image: "/Gallery/8.jpeg" },
+  { id: 9, title: "Gallery 09", image: "/Gallery/9.jpeg" },
+  { id: 10, title: "Gallery 10", image: "/Gallery/10.jpeg" },
+  { id: 11, title: "Gallery 11", image: "/Gallery/11.jpeg" },
+  { id: 12, title: "Gallery 12", image: "/Gallery/12.jpeg" },
+  { id: 13, title: "Gallery 13", image: "/Gallery/13.jpeg" },
+  { id: 14, title: "Gallery 14", image: "/Gallery/14.jpeg" },
+  { id: 15, title: "Gallery 15", image: "/Gallery/15.jpeg" },
+  { id: 16, title: "Gallery 16", image: "/Gallery/16.jpeg" },
+  { id: 17, title: "Gallery 17", image: "/Gallery/17.jpeg" },
+  { id: 18, title: "Gallery 18", image: "/Gallery/18.jpeg" },
+  { id: 19, title: "Gallery 19", image: "/Gallery/19.jpeg" },
+  { id: 20, title: "Gallery 20", image: "/Gallery/20.jpeg" },
+  { id: 21, title: "Gallery 21", image: "/Gallery/21.jpeg" },
+  { id: 22, title: "Gallery 22", image: "/Gallery/22.jpeg" },
+  { id: 23, title: "Gallery 23", image: "/Gallery/23.jpeg" },
+  { id: 24, title: "Gallery 24", image: "/Gallery/24.jpeg" },
 ];
 
 const duplicatedGalleryItems = [...galleryItems, ...galleryItems];

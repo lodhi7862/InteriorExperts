@@ -6,8 +6,11 @@ import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import ceoPortrait from "../../../Gallery/CEO.jpeg";
-import gmPortrait from "../../../Gallery/GM.jpeg";
+// import ceoPortrait from "../../../Gallery/CEO.jpeg";
+// import gmPortrait from "../../../Gallery/GM.jpeg";
+
+const ceoPortrait = "/Gallery/CEO.jpeg";
+const gmPortrait = "/Gallery/GM.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -20,7 +20,7 @@ export default function Contact() {
               Whether you require a complete interior redesign, facade finishing, or institutional procurement management, our veteran project leads are ready to consult.
             </p>
 
-            <div className="space-y-8">
+            {/* <div className="space-y-8">
               <div className="flex gap-4 items-start group">
                 <div className="w-10 h-10 border border-gold/20 flex items-center justify-center text-gold bg-gold/5 group-hover:bg-gold group-hover:text-primary transition-all duration-300">
                   <Phone size={16} />
@@ -58,7 +58,7 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="lg:col-span-7 bg-dark-gray/25 border border-gold/10 p-8 sm:p-10 relative">

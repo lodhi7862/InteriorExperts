@@ -160,7 +160,7 @@ export default function AboutUs() {
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.85 }}
-            className="about-animate relative w-full"
+            className="about-animate relative w-[min(92vw,520px)] mx-auto lg:w-full lg:mx-0"
           >
             <div className="absolute -inset-4 rounded-[2rem] border border-gold/15 translate-x-4 translate-y-4" />
             <div className="relative overflow-hidden rounded-[2rem] border border-gold/20 bg-card-bg shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
@@ -198,7 +198,7 @@ export default function AboutUs() {
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.85 }}
-            className="about-animate relative w-full order-2 lg:order-1"
+            className="about-animate relative w-[min(92vw,520px)] mx-auto lg:w-full lg:mx-0 order-2 lg:order-1"
           >
             <div className="absolute -inset-4 rounded-[2rem] border border-gold/15 -translate-x-4 translate-y-4" />
             <div className="relative overflow-hidden rounded-[2rem] border border-gold/20 bg-card-bg shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
